@@ -19,6 +19,10 @@ function brunch_setup() {
     // Make theme available for translation
     load_theme_textdomain(BRUNCH_TEXTDOMAIN, get_template_directory() . '/languages');
 
+    // This theme styles the visual editor to resemble the theme style.
+    is_rtl() ? add_editor_style(array('public/css/editor-rtl.css')) :
+                    add_editor_style(array('public/css/editor.css'));
+
     // theme support
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
