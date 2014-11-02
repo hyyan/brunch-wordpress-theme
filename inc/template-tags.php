@@ -81,7 +81,6 @@ if (!function_exists('brunch_post_nav')) :
         }
         ?>
         <nav class="navigation post-navigation" role="navigation">
-            <h1 class="screen-reader-text"><?php _e('Post navigation', BRUNCH_TEXTDOMAIN); ?></h1>
             <div class="nav-links">
                 <?php
                 if (is_attachment()) :
