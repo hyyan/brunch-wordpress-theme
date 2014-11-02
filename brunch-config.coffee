@@ -6,8 +6,9 @@ exports.config =
     files:
         javascripts:
             joinTo:
+                'js/jquery.js': /^(bower_components[\\/]jquery[\\/]dist[\\/]jquery.js)/
                 'js/app.js': /^(app[\\/]scripts)/
-                'js/vendor.js': /^(vendor|bower_components)/
+                'js/vendor.js': /^(vendor|bower_components(?![\\/]jquery[\\/]dist[\\/]jquery.js))/
 
         stylesheets:
             joinTo: 
