@@ -1,0 +1,19 @@
+{
+  "name": "Brunch Wordpress Theme",
+  "authors": [
+    "Hyyan Abo Fakher <Tiribthea4hyyan@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1",
+    "bootstrap-sass-official": "3.2.0+2"
+  }
+}
