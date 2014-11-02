@@ -28,8 +28,7 @@ if (!defined('ABSPATH'))
 
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-        <?php wp_deregister_script('jquery') ?>
+        
         <?php wp_head(); ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->

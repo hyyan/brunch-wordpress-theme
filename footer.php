@@ -11,6 +11,5 @@ if (!defined('ABSPATH'))
 ?>
 
 <?php wp_footer(); ?>
-<?php if (is_singular()) wp_print_scripts('comment-reply'); ?>
 </body>
 </html>

@@ -15,6 +15,7 @@ $brunch_includes = array(
     'inc/constants.php', // theme constants
     'inc/dependencies.php', // theme dependencies
     'inc/setup.php', // setup theme features
+    'inc/scripts.php', // setup theme scripts
 );
 
 foreach ($brunch_includes as $file) {
