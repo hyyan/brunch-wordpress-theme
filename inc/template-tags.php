@@ -53,7 +53,6 @@ if (!function_exists('brunch_paging_nav')) :
         if ($links) :
             ?>
             <nav class="navigation paging-navigation" role="navigation">
-                <h1 class="screen-reader-text"><?php _e('Posts navigation', BRUNCH_TEXTDOMAIN); ?></h1>
                 <div class="pagination loop-pagination">
                     <?php echo $links; ?>
                 </div><!-- .pagination -->
