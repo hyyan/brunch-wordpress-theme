@@ -69,6 +69,17 @@ function brunch_exclude_protected_action($query) {
 }
 
 /**
+ * Handle custom comment display 
+ * 
+ * @param object $comment
+ * @param array $args
+ * @param integer $depth
+ */
+function brunch_comment($comment, $args, $depth) {
+    include(locate_template('inc/templates/comment.php'));
+}
+
+/**
  * Create a nicely formatted and more specific title element text for output
  * in head of document, based on current view.
  *
