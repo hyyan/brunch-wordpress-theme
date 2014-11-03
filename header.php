@@ -28,7 +28,7 @@ if (!defined('ABSPATH'))
 
         <link rel="profile" href="http://gmpg.org/xfn/11" />
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-        
+
         <?php wp_head(); ?>
 
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -39,3 +39,33 @@ if (!defined('ABSPATH'))
         <![endif]-->
     </head>
     <body <?php body_class(); ?>>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                        <?php bloginfo('name'); ?>
+                    </a>
+                </div>
+
+                <?php
+                wp_nav_menu(array(
+                    'menu' => 'primary_navigation',
+                    'theme_location' => 'primary_navigation',
+                    'depth' => 2,
+                    'container' => 'div',
+                    'container_class' => 'collapse navbar-collapse',
+                    'container_id' => 'primary-navbar-collapse',
+                    'menu_class' => 'nav navbar-nav',
+                    'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                    'walker' => new wp_bootstrap_navwalker())
+                );
+                ?>
+            </div>
+        </nav>

@@ -11,6 +11,8 @@
 if (!defined('ABSPATH'))
     exit('restricted access');
 
+require_once __DIR__ . '/vendor/wp_bootstrap_navwalker.php';
+
 add_action('after_setup_theme', 'brunch_setup');
 add_action('widgets_init', 'brunch_widgets_init');
 
@@ -23,6 +25,12 @@ function brunch_setup() {
     // This theme styles the visual editor to resemble the theme style.
     is_rtl() ? add_editor_style(array('public/css/editor-rtl.css')) :
                     add_editor_style(array('public/css/editor.css'));
+
+    // Register wp_nav_menu() menus
+    // http://codex.wordpress.org/Function_Reference/register_nav_menus
+    register_nav_menus(array(
+        'primary_navigation' => __('Primary Navigation', BRUNCH_TEXTDOMAIN)
+    ));
 
     // theme support
     add_theme_support('menus');
