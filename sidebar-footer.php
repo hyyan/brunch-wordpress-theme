@@ -6,13 +6,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 if (!defined('ABSPATH'))
     exit('restricted access');
 ?>
-
-<footer class="site-footer">
-    <?php get_sidebar('footer'); ?>
-</footer>
-<?php wp_footer(); ?>
-</body>
-</html>
+<?php if (is_active_sidebar('sidebar-footer')) : ?>
+    <div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">
+        <?php dynamic_sidebar('sidebar-footer'); ?>
+    </div>
+<?php endif; ?>

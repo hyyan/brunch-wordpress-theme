@@ -12,6 +12,7 @@ if (!defined('ABSPATH'))
     exit('restricted access');
 
 add_action('after_setup_theme', 'brunch_setup');
+add_action('widgets_init', 'brunch_widgets_init');
 
 /** Setup theme */
 function brunch_setup() {
@@ -42,6 +43,29 @@ function brunch_setup() {
 
     // hide protected posts
     add_action('pre_get_posts', 'brunch_exclude_protected_action');
+}
+
+/**
+ * Register sidebars
+ */
+function brunch_widgets_init() {
+    register_sidebar(array(
+        'name' => __('Primary', BRUNCH_TEXTDOMAIN),
+        'id' => 'sidebar-primary',
+        'before_widget' => '<section class="widget %1$s %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
+
+    register_sidebar(array(
+        'name' => __('Footer', BRUNCH_TEXTDOMAIN),
+        'id' => 'sidebar-footer',
+        'before_widget' => '<section class="widget %1$s %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
 }
 
 /**
