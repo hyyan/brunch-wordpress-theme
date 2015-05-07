@@ -36,7 +36,9 @@ function brunch_setup()
     // theme support
     add_theme_support('menus');
     add_theme_support('post-thumbnails');
+    add_theme_support('custom-background');
     add_theme_support('post-formats', array(''));
+    add_theme_support('post-thumbnails', array('post', 'page'));
     add_theme_support('automatic-feed-links');
     add_theme_support('html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
