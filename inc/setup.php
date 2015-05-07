@@ -1,5 +1,4 @@
 <?php
-
 /*
  * This file is part of the hyyan/brunch-wordpress-theme package.
  * (c) Hyyan Abo Fakher <tiribthea4hyyan@gmail.com>
@@ -35,6 +34,7 @@ function brunch_setup()
 
     // theme support
     add_theme_support('menus');
+    add_theme_support( 'title-tag' );
     add_theme_support('post-thumbnails');
     add_theme_support('custom-background');
     add_theme_support('post-formats', array(''));
@@ -49,8 +49,6 @@ function brunch_setup()
 
     // enable shortcodes in text widget
     add_filter('widget_text', 'do_shortcode');
-    // smart tilte
-    add_filter('wp_title', 'brunch_wp_title', 10, 2);
 
     // hide protected posts
     add_action('pre_get_posts', 'brunch_exclude_protected');
@@ -103,38 +101,4 @@ function brunch_exclude_protected()
 function brunch_comment($comment, $args, $depth)
 {
     include(locate_template('inc/templates/comment.php'));
-}
-
-/**
- * Create a nicely formatted and more specific title element text for output
- * in head of document, based on current view.
- *
- * @param string $title Default title text for current view.
- * @param string $sep Optional separator.
- * 
- * @return string The filtered title.
- */
-function brunch_wp_title($title, $sep)
-{
-    global $paged, $page;
-
-    if (is_feed()) {
-        return $title;
-    }
-
-    // Add the site name.
-    $title .= get_bloginfo('name', 'display');
-
-    // Add the site description for the home/front page.
-    $site_description = get_bloginfo('description', 'display');
-    if ($site_description && ( is_home() || is_front_page() )) {
-        $title = "$title $sep $site_description";
-    }
-
-    // Add a page number if necessary.
-    if ($paged >= 2 || $page >= 2) {
-        $title = "$title $sep " . sprintf(__('Page %s', BRUNCH_TEXTDOMAIN), max($paged, $page));
-    }
-
-    return $title;
 }
