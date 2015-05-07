@@ -53,7 +53,7 @@ function brunch_setup()
     add_filter('wp_title', 'brunch_wp_title', 10, 2);
 
     // hide protected posts
-    add_action('pre_get_posts', 'brunch_exclude_protected_action');
+    add_action('pre_get_posts', 'brunch_exclude_protected');
 }
 
 /**
@@ -81,11 +81,9 @@ function brunch_widgets_init()
 }
 
 /**
- * Decide where to display them
- * 
- * @param WP_Query $query
+ * Execlude the protected posts
  */
-function brunch_exclude_protected_action($query)
+function brunch_exclude_protected()
 {
     if (!is_single() && !is_page() && !is_admin()) {
         add_filter('posts_where', function ($where) {
