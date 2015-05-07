@@ -1,23 +1,28 @@
 {
-    "author": "Hyyan Abo Fakher",
-    "repository": {
-        "type": "git",
-        "url": ""
-    },
-    "engines": {
-        "node": "~0.6.25 || 0.8 || 0.9"
-    },
-    "scripts": {
-        "start": "brunch watch --server",
-        "test": "brunch test"
-    },
-    "dependencies": {
-        "sass-brunch": "1.8.2",
-        "javascript-brunch": ">= 1.0 < 1.8",
-        "css-brunch": ">= 1.0 < 1.8",
-        "uglify-js-brunch": ">= 1.0 < 1.8",
-        "clean-css-brunch": ">= 1.0 < 1.8",
-        "auto-reload-brunch": ">= 1.0 < 1.8"
-    },
-    "devDependencies": {}
+  "author": "Your Name",
+  "name": "package-name",
+  "description": "Package description",
+  "version": "0.0.0",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": "~0.6.25 || 0.8 || 0.9"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+    "start": "brunch watch --server",
+    "test": "brunch test"
+  },
+  "dependencies": {
+    "sass-brunch": "latest",
+    "javascript-brunch": "latest",
+    "css-brunch": "latest",
+    "uglify-js-brunch": "latest",
+    "clean-css-brunch": "latest",
+    "auto-reload-brunch": "latest"
+  },
+  "devDependencies": {}
 }

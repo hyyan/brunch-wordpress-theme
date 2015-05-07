@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starter Template</title>
+
+  <!-- Require app.css and vendor.css-->
+  <link href="css/app.css" rel="stylesheet">
+  <!-- Include the following file for rtl support -->
+  <!--<link href="css/app-rtl.css" rel="stylesheet">-->
+
+  <!-- REMOVE : style for this template -->
+  <style type="text/css">
+
+  /*
+  * Base structure
+  */
+
+  html,
+  body {
+    height: 100%;
+  }
+  body {
+    text-align: center;
+  }
+
+  /* Extra markup and styles for table-esque vertical and horizontal centering */
+  .site-wrapper {
+    display: table;
+    width: 100%;
+    min-height: 100%;
+  }
+  .site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .cover-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Padding for spacing */
+  .inner {
+    padding: 30px;
+  }
+
+
+  /*
+  * Cover
+  */
+
+  .cover {
+    padding: 0 20px;
+  }
+  .cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+
+  /*
+  * Affix and center
+  */
+
+  @media (min-width: 768px) {
+    /* Pull out the header and footer */
+    .masthead {
+      position: fixed;
+      top: 0;
+    }
+    .mastfoot {
+      position: fixed;
+      bottom: 0;
+    }
+    /* Start the vertical centering */
+    .site-wrapper-inner {
+      vertical-align: middle;
+    }
+    /* Handle the widths */
+    .masthead,
+    .mastfoot,
+    .cover-container {
+      width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .masthead,
+    .mastfoot,
+    .cover-container {
+      width: 700px;
+    }
+  }
+
+  </style>
+
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div class="site-wrapper">
+    <div class="site-wrapper-inner">
+      <div class="cover-container">
+        <div class="inner cover">
+          <h1 class="cover-heading">Hyyan Brunch.</h1>
+          <p class="lead">
+            Brunch skeleton with wordpress themes in mind
+            <p class="lead">
+              <a href="https://github.com/hyyan/brunch-with-hyyan/blob/master/README.md" class="btn btn-lg btn-default ">
+                <i class="glyphicon glyphicon-book"></i>
+                Learn more
+              </a>
+              <a href="https://github.com/hyyan/brunch-with-hyyan" class="btn btn-lg btn-default">
+                <i class="glyphicon glyphicon-thumbs-up"></i>
+                Fork/Star On Github
+              </a>
+            </p>
+          </div>
+          <div class="mastfoot">
+            <div class="inner">
+              <p>For <a href="http://brunch.io">Brunch</a>, by <a href="https://github.com/hyyan">Hyyan</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Require js files -->
+    <script src="js/jquery.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

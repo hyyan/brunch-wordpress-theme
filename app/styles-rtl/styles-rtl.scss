@@ -1,9 +1,0 @@
-@import "../bootstrap-rtl";
-
-// DON't REMOVE : fix for rtl navbars 
-@media (min-width: 768px) {
-    .navbar-collapse .navbar-nav.navbar-right:last-child {
-        margin-right: 15px;
-        float: left !important;
-    }
-}
