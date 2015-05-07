@@ -3,7 +3,7 @@ require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/wp-content/themes/brunch-wordpress-theme/"
 css_dir = "public/css"
 images_dir = "public/images"
 javascripts_dir = "public/js"
