@@ -13,7 +13,7 @@ if (!defined('ABSPATH'))
 
 require_once __DIR__ . '/vendor/wp_bootstrap_navwalker.php';
 
-add_action('after_setup_theme', 'brunch_setup');
+add_action('init', 'brunch_setup');
 add_action('widgets_init', 'brunch_widgets_init');
 
 /** Setup theme */
