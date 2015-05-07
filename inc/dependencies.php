@@ -27,7 +27,8 @@ add_action('tgmpa_register', 'brunch_register_required_plugins');
  * This function is hooked into tgmpa_init, which is fired within the
  * TGM_Plugin_Activation class constructor.
  */
-function brunch_register_required_plugins() {
+function brunch_register_required_plugins()
+{
 
     /**
      * Array of plugin arrays. Required keys are name and slug.

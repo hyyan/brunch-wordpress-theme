@@ -14,14 +14,13 @@ if (!defined('ABSPATH'))
 /**
  * Simple template to find out the best title 
  */
-
 if (is_day()) :
     printf(__('<span>Daily Archive</span> %s', BRUNCH_TEXTDOMAIN), get_the_date());
 elseif (is_month()) :
     printf(__('<span>Monthly Archive</span> %s', BRUNCH_TEXTDOMAIN), get_the_date('F Y'));
-elseif (is_year()) : 
+elseif (is_year()) :
     printf(__('<span>Yearly Archive</span> %s', BRUNCH_TEXTDOMAIN), get_the_date('Y'));
-elseif (is_search()) : 
+elseif (is_search()) :
     printf(__('Search Results for: %s', BRUNCH_TEXTDOMAIN), '<span>' . get_search_query() . '</span>');
 elseif (is_category()) :
     echo single_cat_title();

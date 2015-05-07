@@ -17,7 +17,8 @@ if (!function_exists('brunch_paging_nav')) :
      * 
      * @since brunch 1.0
      */
-    function brunch_paging_nav() {
+    function brunch_paging_nav()
+    {
         // Don't print empty markup if there's only one page.
         if ($GLOBALS['wp_query']->max_num_pages < 2) {
             return;
@@ -54,7 +55,7 @@ if (!function_exists('brunch_paging_nav')) :
             ?>
             <nav class="navigation paging-navigation" role="navigation">
                 <div class="pagination loop-pagination">
-                    <?php echo $links; ?>
+            <?php echo $links; ?>
                 </div><!-- .pagination -->
             </nav><!-- .navigation -->
             <?php
@@ -71,7 +72,8 @@ if (!function_exists('brunch_post_nav')) :
      * 
      * @since brunch 1.0
      */
-    function brunch_post_nav() {
+    function brunch_post_nav()
+    {
         // Don't print empty markup if there's nowhere to navigate.
         $previous = ( is_attachment() ) ? get_post(get_post()->post_parent) : get_adjacent_post(false, '', true);
         $next = get_adjacent_post(false, '', false);
@@ -106,14 +108,15 @@ if (!function_exists('brunch_posted_on')) :
      *
      * @since brunch 1.0
      */
-    function brunch_posted_on() {
+    function brunch_posted_on()
+    {
         if (is_sticky() && is_home() && !is_paged()) {
             echo '<span class="featured-post">' . __('Sticky', BRUNCH_TEXTDOMAIN) . '</span>';
         }
 
         // Set up and print post meta information.
         printf(
-                '   <span class="entry-date">'
+                '<span class="entry-date">'
                 . '     <a href="%1$s" rel="bookmark">'
                 . '         <time class="entry-date" datetime="%2$s">%3$s</time>'
                 . '     </a>'
@@ -130,6 +133,4 @@ if (!function_exists('brunch_posted_on')) :
                 , get_the_author()
         );
     }
-
-
 endif;

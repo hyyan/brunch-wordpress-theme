@@ -26,10 +26,10 @@ $GLOBALS['comment'] = $comment;
         <div class="comment-author vcard">
             <?php echo get_avatar($comment->comment_author_email, 52); ?>
 
-            <?php printf(__('<cite class="comment-name">%s</cite>'), get_comment_author()) ?><?php edit_comment_link(__('(Edit)',BRUNCH_TEXTDOMAIN), '  ', '') ?>
+            <?php printf(__('<cite class="comment-name">%s</cite>'), get_comment_author()) ?><?php edit_comment_link(__('(Edit)', BRUNCH_TEXTDOMAIN), '  ', '') ?>
         </div>
         <?php if ($comment->comment_approved == '0') : ?>
-            <em><?php _e('Your comment is awaiting moderation.',BRUNCH_TEXTDOMAIN) ?></em>
+            <em><?php _e('Your comment is awaiting moderation.', BRUNCH_TEXTDOMAIN) ?></em>
             <br />
         <?php endif; ?>
 

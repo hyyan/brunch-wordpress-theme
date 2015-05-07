@@ -17,7 +17,8 @@ add_action('after_setup_theme', 'brunch_setup');
 add_action('widgets_init', 'brunch_widgets_init');
 
 /** Setup theme */
-function brunch_setup() {
+function brunch_setup()
+{
 
     // Make theme available for translation
     load_theme_textdomain(BRUNCH_TEXTDOMAIN, get_template_directory() . '/languages');
@@ -56,7 +57,8 @@ function brunch_setup() {
 /**
  * Register sidebars
  */
-function brunch_widgets_init() {
+function brunch_widgets_init()
+{
     register_sidebar(array(
         'name' => __('Primary', BRUNCH_TEXTDOMAIN),
         'id' => 'sidebar-primary',
@@ -77,26 +79,17 @@ function brunch_widgets_init() {
 }
 
 /**
- * Filter to hide protected posts
- * 
- * @param string $where
- * 
- * @global type $wpdb
- * @return string
- */
-function brunch_exclude_protected($where) {
-    global $wpdb;
-    return $where .= " AND {$wpdb->posts}.post_password = '' ";
-}
-
-/**
  * Decide where to display them
  * 
  * @param WP_Query $query
  */
-function brunch_exclude_protected_action($query) {
+function brunch_exclude_protected_action($query)
+{
     if (!is_single() && !is_page() && !is_admin()) {
-        add_filter('posts_where', 'brunch_exclude_protected');
+        add_filter('posts_where', function ($where) {
+            global $wpdb;
+            return $where .= " AND {$wpdb->posts}.post_password = '' ";
+        });
     }
 }
 
@@ -107,7 +100,8 @@ function brunch_exclude_protected_action($query) {
  * @param array $args
  * @param integer $depth
  */
-function brunch_comment($comment, $args, $depth) {
+function brunch_comment($comment, $args, $depth)
+{
     include(locate_template('inc/templates/comment.php'));
 }
 
@@ -120,7 +114,8 @@ function brunch_comment($comment, $args, $depth) {
  * 
  * @return string The filtered title.
  */
-function brunch_wp_title($title, $sep) {
+function brunch_wp_title($title, $sep)
+{
     global $paged, $page;
 
     if (is_feed()) {
