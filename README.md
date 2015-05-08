@@ -7,6 +7,7 @@
 **Brunch Wordpress Theme** is a WordPress starter theme based on HTML5 Boilerplate, brunch, Bower, and Bootstrap Sass, that will help you make better themes.
 
 * Source: [https://github.com/hyyan/brunch-wordpress-theme](https://github.com/hyyan/brunch-wordpress-theme)
+* Wiki  : [Brunch Wordpress Theme Wiki](https://github.com/hyyan/brunch-wordpress-theme/wiki)
 * Twitter: [HyyanAF](https://twitter.com/HyyanAF)
 
 ## Requirements
