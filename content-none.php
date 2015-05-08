@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 ?>
 
 <header class="page-header">

@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 $isByAuthor = false;
 if ($comment->comment_author_email == get_the_author_meta('email')) {

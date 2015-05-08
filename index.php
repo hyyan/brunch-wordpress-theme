@@ -7,15 +7,16 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 ?>
 
 <?php get_header(); ?>
 <div class="primary-content">
 
     <header>
-        <h1><?php get_template_part('inc/templates/title')?></h1>
+        <h1><?php get_template_part('inc/templates/title') ?></h1>
     </header>
 
     <?php
@@ -42,4 +43,4 @@ if (!defined('ABSPATH'))
     ?>
 </div>
 <?php get_sidebar(); ?>
-<?php get_footer();?>
+<?php get_footer(); ?>

@@ -8,8 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 add_action('wp_enqueue_scripts', 'brunch_scripts', 100);
 

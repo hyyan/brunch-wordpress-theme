@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 ?>
 <?php if (is_active_sidebar('sidebar-footer')) : ?>
     <div id="footer-sidebar" class="footer-sidebar widget-area" role="complementary">

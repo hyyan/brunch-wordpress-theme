@@ -8,8 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 define('BRUNCH_THEME_NAME', 'Brunch');
 define('BRUNCH_TEXTDOMAIN', 'brunch');

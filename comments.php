@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 /*
  * If the current post is protected by a password and
@@ -60,21 +61,22 @@ if (post_password_required()) {
             <?php
             wp_list_comments(array('callback' => function () {
                     include(locate_template('inc/templates/comment.php'));
-                }));
+                }
+            ));
             ?>
         </ol>
 
         <?php // are there comments to navigate through ?>
-    <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')) : ?>
             <nav class="comment-navigation" role="navigation">
                 <h1 class="screen-reader-text">
-        <?php _e('Comment navigation', BRUNCH_TEXTDOMAIN); ?>
+                    <?php _e('Comment navigation', BRUNCH_TEXTDOMAIN); ?>
                 </h1>
                 <div class="nav-previous">
-        <?php previous_comments_link(__('&larr; Older Comments', BRUNCH_TEXTDOMAIN)); ?>
+                    <?php previous_comments_link(__('&larr; Older Comments', BRUNCH_TEXTDOMAIN)); ?>
                 </div>
                 <div class="nav-next">
-        <?php next_comments_link(__('Newer Comments &rarr;', BRUNCH_TEXTDOMAIN)); ?>
+                    <?php next_comments_link(__('Newer Comments &rarr;', BRUNCH_TEXTDOMAIN)); ?>
                 </div>
             </nav>
         <?php endif; ?>
@@ -86,6 +88,6 @@ if (post_password_required()) {
         <p class="no-comments"><?php _e('Comments are closed.', 'sparkling'); ?></p>
     <?php endif; ?>
 
-<?php comment_form(); ?>
+    <?php comment_form(); ?>
 
 </div>

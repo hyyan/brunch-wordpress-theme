@@ -8,8 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 require_once __DIR__ . '/vendor/wp_bootstrap_navwalker.php';
 

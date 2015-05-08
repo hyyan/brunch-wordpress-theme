@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -73,7 +74,7 @@ if (!defined('ABSPATH'))
 
     <?php
     the_tags(
-            '<footer class="entry-meta"><span class="tag-links ">'.__('Tags',BRUNCH_TEXTDOMAIN).' : '
+            '<footer class="entry-meta"><span class="tag-links ">' . __('Tags', BRUNCH_TEXTDOMAIN) . ' : '
             , ' > '
             , '</span></footer>'
     );

@@ -7,8 +7,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 if (!function_exists('brunch_paging_nav')) :
 
@@ -55,7 +56,7 @@ if (!function_exists('brunch_paging_nav')) :
             ?>
             <nav class="navigation paging-navigation" role="navigation">
                 <div class="pagination loop-pagination">
-            <?php echo $links; ?>
+                    <?php echo $links; ?>
                 </div><!-- .pagination -->
             </nav><!-- .navigation -->
             <?php

@@ -8,8 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 $brunch_includes = array(
     'inc/constants.php', // theme constants

@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the hyyan/brunch-wordpress-theme package.
  * (c) Hyyan Abo Fakher <tiribthea4hyyan@gmail.com>
@@ -7,14 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH')) {
+if (!defined('ABSPATH')){
     exit('restricted access');
 }
-?>
 
-<footer class="site-footer">
-    <?php get_sidebar('footer'); ?>
-</footer>
-<?php wp_footer(); ?>
-</body>
-</html>
+
+

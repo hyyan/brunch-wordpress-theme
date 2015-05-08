@@ -8,8 +8,9 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH'))
+if (!defined('ABSPATH')) {
     exit('restricted access');
+}
 
 /**
  * Include the TGM_Plugin_Activation class.
