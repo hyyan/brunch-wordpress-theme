@@ -8,9 +8,12 @@
  * file that was distributed with this source code.
  */
 
-if (!defined('ABSPATH')){
+if (!defined('ABSPATH')) {
     exit('restricted access');
 }
 
-
-
+// Register wp_nav_menu() menus
+// http://codex.wordpress.org/Function_Reference/register_nav_menus
+register_nav_menus(array(
+    'primary_navigation' => __('Primary Navigation', BRUNCH_TEXTDOMAIN)
+));

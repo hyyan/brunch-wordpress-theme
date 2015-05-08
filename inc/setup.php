@@ -15,7 +15,6 @@ if (!defined('ABSPATH')) {
 require_once __DIR__ . '/vendor/wp_bootstrap_navwalker.php';
 
 add_action('init', 'brunch_setup');
-add_action('widgets_init', 'brunch_widgets_init');
 
 /** Setup theme */
 function brunch_setup()
@@ -28,12 +27,9 @@ function brunch_setup()
     is_rtl() ? add_editor_style(array('public/css/editor-rtl.css')) :
                     add_editor_style(array('public/css/editor.css'));
 
-    // Register wp_nav_menu() menus
-    // http://codex.wordpress.org/Function_Reference/register_nav_menus
-    register_nav_menus(array(
-        'primary_navigation' => __('Primary Navigation', BRUNCH_TEXTDOMAIN)
-    ));
-
+    require_once (locate_template('inc/menus.php'));
+    require_once (locate_template('inc/sidebars.php'));
+    
     // theme support
     add_theme_support('menus');
     add_theme_support('title-tag');
@@ -51,28 +47,4 @@ function brunch_setup()
 
     // enable shortcodes in text widget
     add_filter('widget_text', 'do_shortcode');
-}
-
-/**
- * Register sidebars
- */
-function brunch_widgets_init()
-{
-    register_sidebar(array(
-        'name' => __('Primary', BRUNCH_TEXTDOMAIN),
-        'id' => 'sidebar-primary',
-        'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-
-    register_sidebar(array(
-        'name' => __('Footer', BRUNCH_TEXTDOMAIN),
-        'id' => 'sidebar-footer',
-        'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
 }
