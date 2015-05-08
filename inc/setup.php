@@ -29,7 +29,7 @@ function brunch_setup()
 
     require_once (locate_template('inc/menus.php'));
     require_once (locate_template('inc/sidebars.php'));
-    
+
     // theme support
     add_theme_support('menus');
     add_theme_support('title-tag');
@@ -41,6 +41,10 @@ function brunch_setup()
     add_theme_support('html5', array(
         'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
     ));
+    add_theme_support(
+            'brunch_jquery_cdn'
+            , '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
+    );
 
     // post types support
     add_post_type_support('page', 'excerpt');
