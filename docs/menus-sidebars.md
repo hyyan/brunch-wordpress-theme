@@ -39,4 +39,4 @@ register_sidebar(array(
 
 This theme comes prepared with [WP Bootstrap Navwalker](https://github.com/twittem/wp-bootstrap-navwalker) A custom WordPress nav walker class to fully implement the Twitter Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager
 
-You can lear more about this class from its [Repository](https://github.com/twittem/wp-bootstrap-navwalker).
+You can learn more about this class from its [Repository](https://github.com/twittem/wp-bootstrap-navwalker).
