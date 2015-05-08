@@ -1,4 +1,5 @@
 <?php
+
 /*
  * This file is part of the hyyan/brunch-wordpress-theme package.
  * (c) Hyyan Abo Fakher <tiribthea4hyyan@gmail.com>
@@ -34,7 +35,7 @@ function brunch_setup()
 
     // theme support
     add_theme_support('menus');
-    add_theme_support( 'title-tag' );
+    add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
     add_theme_support('custom-background');
     add_theme_support('post-formats', array(''));
@@ -89,16 +90,4 @@ function brunch_exclude_protected()
             return $where .= " AND {$wpdb->posts}.post_password = '' ";
         });
     }
-}
-
-/**
- * Handle custom comment display 
- * 
- * @param object $comment
- * @param array $args
- * @param integer $depth
- */
-function brunch_comment($comment, $args, $depth)
-{
-    include(locate_template('inc/templates/comment.php'));
 }
