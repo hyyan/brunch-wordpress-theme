@@ -1,6 +1,6 @@
 # Wordpress Menus And SideBars
 
-The theme defines two files `menus` and `sidebars` where you can add new menus and sidebars to them.
+The theme defines two files `menus` and `sidebars` where you can add new menus and sidebars.
 
 # How to use
 
