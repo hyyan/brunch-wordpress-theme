@@ -50,9 +50,6 @@ function brunch_setup()
 
     // enable shortcodes in text widget
     add_filter('widget_text', 'do_shortcode');
-
-    // hide protected posts
-    add_action('pre_get_posts', 'brunch_exclude_protected');
 }
 
 /**
@@ -77,17 +74,4 @@ function brunch_widgets_init()
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ));
-}
-
-/**
- * Execlude the protected posts
- */
-function brunch_exclude_protected()
-{
-    if (!is_single() && !is_page() && !is_admin()) {
-        add_filter('posts_where', function ($where) {
-            global $wpdb;
-            return $where .= " AND {$wpdb->posts}.post_password = '' ";
-        });
-    }
 }
