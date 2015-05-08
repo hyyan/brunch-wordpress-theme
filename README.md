@@ -60,7 +60,7 @@ config =
 
 *Brunch Wordpress Theme* uses [Brunch](https://github.com/brunch/brunch) as its build system and [Bower](http://bower.io/) to manage front-end packages.
 
-### Install Brunch and Bower
+**1 - Install Brunch and Bower**
 
 Building the theme requires [node.js](http://nodejs.org/download/).
 
@@ -71,7 +71,7 @@ From the command line:
 
 You now have all the necessary dependencies to run the build process.
 
-### Available Brunch commands
+**2 - Available Brunch commands**
 
 * `brunch build` — Compile and optimize the files in your assets directory
 * `brunch watch` — Compile assets when file changes are made
