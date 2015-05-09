@@ -73,9 +73,16 @@ You now have all the necessary dependencies to run the build process.
 
 **2 - Available Brunch commands**
 
-* `brunch build` — Compile and optimize the files in your assets directory
+* `brunch build` — Compile and optimize the files in your app directory
 * `brunch watch` — Compile assets when file changes are made
 * `brunch build --production` — Compile assets for production (no source maps).
+
+## Documentaions
+
+* [Understanding Frontend Package Management](https://github.com/hyyan/brunch-wordpress-theme/blob/master/docs/frontend.md)
+* [Require Or Recommend Plugins For Your WordPress Themes](https://github.com/hyyan/brunch-wordpress-theme/blob/master/docs/wordpress-plugins.md)
+* [Wordpress Menus And SideBars](https://github.com/hyyan/brunch-wordpress-theme/blob/master/docs/menus-sidebars.md)
+* [Theme Deployment](https://github.com/hyyan/brunch-wordpress-theme/blob/master/docs/deployment.md)
 
 ## Contributing
 
