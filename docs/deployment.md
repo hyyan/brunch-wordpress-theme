@@ -40,6 +40,7 @@ test = no
 ; files and directories to ignore
 ignore = "
     .git*
+    *.ini
     /bower_components
     /node_modules
     /bower.json
