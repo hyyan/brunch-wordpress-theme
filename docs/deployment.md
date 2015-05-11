@@ -41,6 +41,7 @@ test = no
 ignore = "
     .git*
     *.ini
+    *.pot
     /bower_components
     /node_modules
     /bower.json
