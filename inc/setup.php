@@ -14,11 +14,8 @@ if (!defined('ABSPATH')) {
 
 require_once __DIR__ . '/vendor/wp_bootstrap_navwalker.php';
 
-add_action('init', 'brunch_setup');
-
 /** Setup theme */
-function brunch_setup()
-{
+add_action('after_setup_theme', function () {
 
     // Make theme available for translation
     load_theme_textdomain(BRUNCH_TEXTDOMAIN, get_template_directory() . '/languages');
@@ -28,7 +25,6 @@ function brunch_setup()
                     add_editor_style(array('public/css/editor.css'));
 
     require_once (locate_template('inc/menus.php'));
-    require_once (locate_template('inc/sidebars.php'));
 
     // theme support
     add_theme_support('menus');
@@ -51,4 +47,9 @@ function brunch_setup()
 
     // enable shortcodes in text widget
     add_filter('widget_text', 'do_shortcode');
-}
+});
+
+/** Setup widgets */
+add_action('widgets_init', function() {
+    require_once (locate_template('inc/sidebars.php'));
+});
