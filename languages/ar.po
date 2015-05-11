@@ -1,0 +1,499 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Brunch Wordpress Theme\n"
+"POT-Creation-Date: 2015-05-10 20:09-0800\n"
+"PO-Revision-Date: 2015-05-10 20:17-0800\n"
+"Last-Translator: Hyyan Abo Fakher <tiribthea4hyyan@gmail.com>\n"
+"Language-Team: Hyyan Abo Fakher <tiribthea4hyyan@gmail.com>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.6\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPathExcluded-0: ../bower_components\n"
+"X-Poedit-SearchPathExcluded-1: ../node_modules\n"
+"X-Poedit-SearchPathExcluded-2: ../vendor\n"
+"X-Poedit-SearchPathExcluded-3: ../inc/vendor\n"
+
+#: ../comments.php:33
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "لا يوجد تعليقات"
+msgstr[1] "تعليق واحد على   &ldquo;%2$s&rdquo;"
+msgstr[2] "%1$s تعليقين على   &ldquo;%2$s&rdquo;"
+msgstr[3] "%1$s تعليقات على  &ldquo;%2$s&rdquo;"
+msgstr[4] "%1$s تعليقات على  &ldquo;%2$s&rdquo;"
+msgstr[5] "%1$s تعليقات على  &ldquo;%2$s&rdquo;"
+
+#: ../comments.php:49 ../comments.php:73
+msgid "Comment navigation"
+msgstr "تصفح التعليقات"
+
+#: ../comments.php:52 ../comments.php:76
+msgid "&larr; Older Comments"
+msgstr " &rarr; التعليقات الأقدم"
+
+#: ../comments.php:55 ../comments.php:79
+msgid "Newer Comments &rarr;"
+msgstr "&larr; التعليقات الأحدث"
+
+#: ../comments.php:88
+msgid "Comments are closed."
+msgstr "تم إيقاف التعليقات"
+
+#: ../content-none.php:16
+msgid "Nothing Found"
+msgstr "لم يتم العثور على أي شيء"
+
+#: ../content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "هل أنت مستعد لنشر مقالتك الأولى ؟ <a href=\"%1$s\">ابدأ من هنا</a>."
+
+#: ../content.php:39
+msgid "Leave a comment"
+msgstr "اترك تعليقاً"
+
+#: ../content.php:40
+msgid "1 Comment"
+msgstr "1 تعليق"
+
+#: ../content.php:41
+msgid "% Comments"
+msgstr "% تعليق"
+
+#: ../content.php:49
+msgid "Edit"
+msgstr "تحرير"
+
+#: ../content.php:67
+msgid "Pages:"
+msgstr "الصفحات :"
+
+#: ../content.php:77
+msgid "Tags"
+msgstr "الوسوم"
+
+#: ../functions.php:25
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "خطأ في تحديد موقع %s للإدراج"
+
+#: ../inc/dependencies.php:80
+msgid "can't be used without installing its dependencies"
+msgstr "لا يمكن استخدامه ما لم يتم تثبيت الإضافات المطلوبة"
+
+#: ../inc/dependencies.php:82
+msgid "Required Plugins"
+msgstr "الإضافات المطلوبة"
+
+#: ../inc/dependencies.php:84
+msgid "Install Required Plugins"
+msgstr "تنصيب الإضافات المطلوبة"
+
+#: ../inc/dependencies.php:85
+msgid "Install Plugins"
+msgstr "تنصيب الإضافات"
+
+#: ../inc/dependencies.php:86
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "جاري تنصيب الإضافات :  %s"
+
+#: ../inc/dependencies.php:87
+msgid "Something went wrong with the plugin API."
+msgstr "حدث خطأ ما في API الإضافة"
+
+#: ../inc/dependencies.php:88
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] "."
+msgstr[1] "هذا الموضوع يتطلب الإضافة التالية : %1$s."
+msgstr[2] "هذا الموضوع يتطلب الإضافتين التاليتين : %1$s."
+msgstr[3] "هذا الموضوع يتطلب الإضافات التالية : %1$s."
+msgstr[4] "هذا الموضوع يتطلب الإضافات التالية : %1$s."
+msgstr[5] "هذا الموضوع يتطلب الإضافات التالية : %1$s."
+
+#: ../inc/dependencies.php:89
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] "."
+msgstr[1] "هذا الموضوع ينصح بالإضافة التالية : %1$s."
+msgstr[2] "هذا الموضوع ينصح بالإضافتين التاليتين : %1$s."
+msgstr[3] "هذا الموضوع ينصح بالإضافات التالية : %1$s."
+msgstr[4] "هذا الموضوع ينصح بالإضافات التالية : %1$s."
+msgstr[5] "هذا الموضوع ينصح بالإضافات التالية : %1$s."
+
+#: ../inc/dependencies.php:90
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] "."
+msgstr[1] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة لتنصيب %s  , تواصل مع مدير الموقع "
+"لمساعدة في تنصيب الإضافة"
+msgstr[2] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة لتنصيب %s  , تواصل مع مدير الموقع "
+"لمساعدة في تنصيب الإضافتين"
+msgstr[3] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة لتنصيب %s  , تواصل مع مدير الموقع "
+"لمساعدة في تنصيب الإضافات"
+msgstr[4] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة لتنصيب %s  , تواصل مع مدير الموقع "
+"لمساعدة في تنصيب الإضافات"
+msgstr[5] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة لتنصيب %s  , تواصل مع مدير الموقع "
+"لمساعدة في تنصيب الإضافات"
+
+#: ../inc/dependencies.php:91
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] "."
+msgstr[1] "الإضافة التالية المطلوبة غير مفعلة :  %1$s."
+msgstr[2] "الإضافتين التالييتين المطلوبتين غير مفعلتين :  %1$s."
+msgstr[3] "الإضافات التالية المطلوبة غير مفعلة :  %1$s."
+msgstr[4] "الإضافات التالية المطلوبة غير مفعلة :  %1$s."
+msgstr[5] "الإضافات التالية المطلوبة غير مفعلة :  %1$s."
+
+#: ../inc/dependencies.php:92
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] "."
+msgstr[1] "الإضافة التالية المنصوح بها غير مفعلة :  %1$s."
+msgstr[2] "الإضافتين التالييتين المنصوح بهما غير مفعلتين :  %1$s."
+msgstr[3] "الإضافات التالية المنصوح بها غير مفعلة :  %1$s."
+msgstr[4] "الإضافات التالية المنصوح بها غير مفعلة :  %1$s."
+msgstr[5] "الإضافات التالية المنصوح بها غير مفعلة :  %1$s."
+
+#: ../inc/dependencies.php:93
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] "."
+msgstr[1] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتفعيل الإضافة  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تفعيل الإضافة"
+msgstr[2] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتفعيل الإضافتين %s .  تواصل مع مدير "
+"الموقع لمساعدة في تفعيل الإضافتين"
+msgstr[3] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتفعيل الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تفعيل الإضافات"
+msgstr[4] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتفعيل الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تفعيل الإضافات"
+msgstr[5] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتفعيل الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تفعيل الإضافات"
+
+#: ../inc/dependencies.php:94
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] "."
+msgstr[1] ""
+"الإضافة التالية بحاجة لتحديث لأحدث نسخة لضمان التوافقية مع هذا الموضوع : "
+"%1$s."
+msgstr[2] ""
+"الإضافتين التاليتين بحاجة لتحديث لأحدث نسخة لضمان التوافقية مع هذا الموضوع : "
+"%1$s."
+msgstr[3] ""
+"الإضافات التالية بحاجة لتحديث لأحدث نسخة لضمان التوافقية مع هذا الموضوع : "
+"%1$s."
+msgstr[4] ""
+"الإضافات التالية بحاجة لتحديث لأحدث نسخة لضمان التوافقية مع هذا الموضوع : "
+"%1$s."
+msgstr[5] ""
+"الإضافات التالية بحاجة لتحديث لأحدث نسخة لضمان التوافقية مع هذا الموضوع : "
+"%1$s."
+
+#: ../inc/dependencies.php:95
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] "."
+msgstr[1] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتحديث الإضافة  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تحديث الإضافة"
+msgstr[2] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتحديث الإضافتين %s .  تواصل مع مدير "
+"الموقع لمساعدة في تحديث الإضافتين"
+msgstr[3] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتحديث الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تحديث الإضافات"
+msgstr[4] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتحديث الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تحديث الإضافات"
+msgstr[5] ""
+"عذراً , أنك لا تملك الصلاحيات المطلوبة  لتحديث الإضافات  %s .  تواصل مع مدير "
+"الموقع لمساعدة في تحديث الإضافات"
+
+#: ../inc/dependencies.php:96
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] "."
+msgstr[1] "البدء بتنصيب الإضافة"
+msgstr[2] "البدء بتنصيب الإضافتين"
+msgstr[3] "البدء بتنصيب الإضافات"
+msgstr[4] "البدء بتنصيب الإضافات"
+msgstr[5] "البدء بتنصيب الإضافات"
+
+#: ../inc/dependencies.php:97
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] "."
+msgstr[1] "البدء بتفعيل الإضافة"
+msgstr[2] "البدء بتفعيل الإضافتين"
+msgstr[3] "البدء بتفعيل الإضافات"
+msgstr[4] "البدء بتفعيل الإضافات"
+msgstr[5] "البدء بتفعيل الإضافات"
+
+#: ../inc/dependencies.php:98
+msgid "Return to Required Plugins Installer"
+msgstr "العودة إلى منصب الإضافات المطلوبة"
+
+#: ../inc/dependencies.php:99
+msgid "Plugin activated successfully."
+msgstr "تم تفعيل الإضافة بنجاح"
+
+#: ../inc/dependencies.php:100
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr "تم تنصيب و تفعيل كافة الإضافات بنجاح  %s "
+
+#: ../inc/menus.php:18
+msgid "Primary Navigation"
+msgstr "القائمة الرئيسية"
+
+#: ../inc/sidebars.php:16
+msgid "Primary"
+msgstr "الرئيسية"
+
+#: ../inc/sidebars.php:25
+msgid "Footer"
+msgstr "التذيل"
+
+#: ../inc/template-tags.php:51
+msgid "&larr; Previous"
+msgstr "&rarr; السابق"
+
+#: ../inc/template-tags.php:52
+msgid "Next &rarr;"
+msgstr "&larr;  التالي"
+
+#: ../inc/template-tags.php:90
+msgid "<span class=\"meta-nav\">Published In</span>%title"
+msgstr "<span class=\"meta-nav\">نشر في</span>%title"
+
+#: ../inc/template-tags.php:92
+msgid "<span class=\"meta-nav\">Previous Post</span>%title"
+msgstr "<span class=\"meta-nav\">المقالة السابقة</span>%title"
+
+#: ../inc/template-tags.php:93
+msgid "<span class=\"meta-nav\">Next Post</span>%title"
+msgstr "<span class=\"meta-nav\">المقالة التالية</span>%title"
+
+#: ../inc/template-tags.php:115
+msgid "Sticky"
+msgstr "مميز"
+
+#: ../inc/templates/comment.php:30
+#, php-format
+msgid "<cite class=\"comment-name\">%s</cite>"
+msgstr "<cite class=\"comment-name\">%s</cite>"
+
+#: ../inc/templates/comment.php:30
+msgid "(Edit)"
+msgstr "(تحرير)"
+
+#: ../inc/templates/comment.php:33
+msgid "Your comment is awaiting moderation."
+msgstr "تعليقك بانتظار المراجعة"
+
+#: ../inc/templates/title.php:19
+#, php-format
+msgid "<span>Daily Archive</span> %s"
+msgstr "<span>الأرشيق اليومي</span> %s"
+
+#: ../inc/templates/title.php:21
+#, php-format
+msgid "<span>Monthly Archive</span> %s"
+msgstr "<span>الأرشيف الشهري</span> %s"
+
+#: ../inc/templates/title.php:23
+#, php-format
+msgid "<span>Yearly Archive</span> %s"
+msgstr "<span>الأرشيف الشهري</span> %s"
+
+#: ../inc/templates/title.php:25
+#, php-format
+msgid "Search Results for: %s"
+msgstr "نتائج البحث عن : : %s"
+
+#: ../inc/templates/title.php:31
+msgid "Latest Posts"
+msgstr "أحدث المقالات"
+
+#~ msgid "Something went wrong."
+#~ msgstr "حدث خطأ ما"
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "العودة لرئيسية"
+
+#~ msgid "All plugins installed and activated successfully. %1$s"
+#~ msgstr "كل الإضافات تم تنصيبها وتفيعيلها بنجاح .  %1$s"
+
+#~ msgid "Dismiss this notice"
+#~ msgstr "إخفاء هذه الملاحظة"
+
+#~ msgid "Return to the Dashboard"
+#~ msgstr "العودة لرئيسية"
+
+#~ msgid "Private Repository"
+#~ msgstr "مستودع خاص"
+
+#~ msgid "Pre-Packaged"
+#~ msgstr "مضمنة"
+
+#~ msgid "WordPress Repository"
+#~ msgstr "مستودع ووردبريس"
+
+#~ msgid "Required"
+#~ msgstr "مطلوبة"
+
+#~ msgid "Recommended"
+#~ msgstr "ينصح بها"
+
+#~ msgid "Not Installed"
+#~ msgstr "غير منصبة "
+
+#~ msgid "Installed But Not Activated"
+#~ msgstr "منصبة ولكن غير مفعلة"
+
+#~ msgid "Install"
+#~ msgstr "تنصيب"
+
+#~ msgid "Activate"
+#~ msgstr "تفعيل"
+
+#~ msgid ""
+#~ "No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+#~ "Dashboard\">Return to the Dashboard</a>"
+#~ msgstr ""
+#~ "لا يوجد إضافات ليتم تنصيبها أو تفعيلها . <a href=\"%1$s\" title=\"العودة "
+#~ "لرئيسية\">العودة لرئيسية</a>"
+
+#~ msgid "Plugin"
+#~ msgstr "الإضافة"
+
+#~ msgid "Source"
+#~ msgstr "المصدر"
+
+#~ msgid "Type"
+#~ msgstr "النوع"
+
+#~ msgid "Status"
+#~ msgstr "الحالة"
+
+#~ msgid "Install package not available."
+#~ msgstr "تثبيت الحزمة غير متوافر"
+
+#~ msgid ""
+#~ "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+#~ msgstr "تحميل وتنصيب الحزمة من <span class=\"code\">%s</span>&#8230;"
+
+#~ msgid "Unpacking the package&#8230;"
+#~ msgstr "فك ظغط الحزمة e&#8230;"
+
+#~ msgid "Installing the plugin&#8230;"
+#~ msgstr "تنصيب الإضافة &#8230;"
+
+#~ msgid "Plugin install failed."
+#~ msgstr "فشل تنصيب الإضافة "
+
+#~ msgid "Plugin installed successfully."
+#~ msgstr "تم تنصيب الإضافة بنجاح"
+
+#~ msgid "Plugin activation failed."
+#~ msgstr "فشل تفعيل الإضافة"
+
+#~ msgid ""
+#~ "The installation and activation process is starting. This process may "
+#~ "take a while on some hosts, so please be patient."
+#~ msgstr ""
+#~ "تم بدء عملية التنصيب و التفعيل , هذه العملية يمكن أن تأخذ وقتاً على بعض "
+#~ "المستضيفات , الرجاء أن تكون صبوراً"
+
+#~ msgid "%1$s installed and activated successfully."
+#~ msgstr "تم تنصيب و تفعيل %1$s  بنجاح"
+
+#~ msgid "Show Details"
+#~ msgstr "رؤية التفاصيل"
+
+#~ msgid "Hide Details"
+#~ msgstr "إخفاء التفاصيل"
+
+#~ msgid "All installations and activations have been completed."
+#~ msgstr "كل عمليات التنصيب والتفعيل اكتملت"
+
+#~ msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "جاري تنصيب وتفعيل  %1$s (%2$d/%3$d)"
+
+#~ msgid ""
+#~ "The installation process is starting. This process may take a while on "
+#~ "some hosts, so please be patient."
+#~ msgstr ""
+#~ "تم بدء عملية التنصيب . هذه العملية يمكن أن تأخذ وقتاً على بعض المستضيفات , "
+#~ "الرجاء أن تكون صبوراً"
+
+#~ msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+#~ msgstr "حدث خطأ ما أثناء تنصيب  %1$s: <strong>%2$s</strong>."
+
+#~ msgid "The installation of %1$s failed."
+#~ msgstr "فشل تنصيب %1$s"
+
+#~ msgid "%1$s installed successfully."
+#~ msgstr "تم تنصيب %1$s بنجاح"
+
+#~ msgid "All installations have been completed."
+#~ msgstr "اكتملت جميع عمليات التنصيب"
+
+#~ msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#~ msgstr "جاري تنصيب %1$s (%2$d/%3$d)"

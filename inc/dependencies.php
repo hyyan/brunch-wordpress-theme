@@ -36,7 +36,7 @@ function brunch_register_required_plugins()
      * If the source is NOT from the .org repo, then source is also required.
      */
     $plugins = array();
-
+ 
     /**
      * Array of configuration settings. Amend each line as needed.
      * If you want the default strings to be available under your own theme domain,
@@ -49,7 +49,7 @@ function brunch_register_required_plugins()
         'menu' => 'brunch-install-plugins', // Menu slug.
         'has_notices' => true, // Show admin notices or not.
         'dismissable' => false, // If false, a user cannot dismiss the nag message.
-        'dismiss_msg' => BRUNCH_THEME_NAME . ' ' . __("Theme can't be used without installing its dependencies", BRUNCH_TEXTDOMAIN) . '<hr>', // If 'dismissable' is false, this message will be output at top of nag.
+        'dismiss_msg' => BRUNCH_THEME_NAME . ' ' . __("can't be used without installing its dependencies", BRUNCH_TEXTDOMAIN) . '<hr>', // If 'dismissable' is false, this message will be output at top of nag.
         'is_automatic' => true, // Automatically activate plugins after installation or not.
         'message' => BRUNCH_THEME_NAME . ' ' . __("Required Plugins", BRUNCH_TEXTDOMAIN), // Message to output right before the plugins table.
         'strings' => array(
