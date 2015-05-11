@@ -59,7 +59,7 @@ if (post_password_required()) {
 
         <ol class="comment-list">
             <?php
-            wp_list_comments(array('callback' => function () {
+            wp_list_comments(array('callback' => function ($comment, $args, $depth) {
                     include(locate_template('inc/templates/comment.php'));
                 }
             ));
