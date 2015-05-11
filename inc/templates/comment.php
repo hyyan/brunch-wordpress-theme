@@ -37,7 +37,7 @@ $GLOBALS['comment'] = $comment;
         <?php comment_text() ?>
 
         <div class="reply">
-            <?php comment_reply_link(array_merge((array)$args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+            <?php comment_reply_link(array_merge($args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
         </div>
     </div>
 </li>
