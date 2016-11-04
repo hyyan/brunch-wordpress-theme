@@ -1,5 +1,9 @@
 #Changelog
 
+### 0.3
+
+* Updated to meet latest updates in brunc-with-hyyan
+
 ### 0.2
 
 * Improved `setup.php` file
