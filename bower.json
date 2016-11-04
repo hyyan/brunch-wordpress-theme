@@ -1,10 +1,9 @@
 {
-  "name": "Your porject name",
-  "version": "0.0.0",
+  "name": "brunch-wordpress-theme",
   "authors": [
-    "Hyyan Abo Fakher <Tiribthea4hyyan@gmail.com>"
+    "Hyyan Abo Fakher <hyyanaf@gmail.com>"
   ],
-  "license": "Your project license",
+  "license": "MIT",
   "private": "true",
   "ignore": [
     "**/.*",

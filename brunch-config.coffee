@@ -1,5 +1,11 @@
 exports.config =
   # See http://brunch.io/#documentation for docs.
+  npm:
+    enabled: false
+
+  server:
+    run: true
+
   paths:
     public: 'public'
 
@@ -38,5 +44,11 @@ exports.config =
   plugins:
     sass:
       debug: 'comments' # or set to 'debug' for the FireSass-style output
-      mode: 'ruby' # set to 'native' to force libsass
+      mode: 'native' # set to 'ruby' to force ruby
       allowCache: true
+      options:
+        includePaths: ['bower_components']
+
+    assetsmanager:
+      copyTo:
+        'fonts': ['bower_components/bootstrap-sass-official/assets/fonts/bootstrap*']

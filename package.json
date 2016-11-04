@@ -1,9 +1,5 @@
 {
-  "author": "Your Name",
-  "name": "package-name",
-  "description": "Package description",
-  "version": "0.0.0",
-  "homepage": "",
+  "name": "brunch-wordpress-theme",
   "repository": {
     "type": "git",
     "url": ""
@@ -17,12 +13,13 @@
     "test": "brunch test"
   },
   "dependencies": {
-    "sass-brunch": "latest",
-    "javascript-brunch": "latest",
-    "css-brunch": "latest",
-    "uglify-js-brunch": "latest",
+    "assetsmanager-brunch": "^1.8.1",
+    "auto-reload-brunch": "latest",
     "clean-css-brunch": "latest",
-    "auto-reload-brunch": "latest"
+    "css-brunch": "latest",
+    "javascript-brunch": "latest",
+    "sass-brunch": "latest",
+    "uglify-js-brunch": "latest"
   },
   "devDependencies": {}
 }

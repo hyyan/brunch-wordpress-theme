@@ -1,7 +1,9 @@
 # Brunch Wordpress Theme
 
-[![project status](http://stillmaintained.com/hyyan/brunch-wordpress-theme.png)](http://stillmaintained.com/hyyan/brunch-wordpress-theme)
+
+[![project status](http://www.repostatus.org/badges/latest/active.svg)](http://www.gitchecker.com/hyyan/brunch-wordpress-theme)
 [![dependency Status](https://david-dm.org/hyyan/brunch-wordpress-theme/status.svg)](https://david-dm.org/hyyan/brunch-wordpress-theme#info=dependencies)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/hyyan/brunch-wordpress-theme/blob/master/LICENSE)
 
 
 **Brunch Wordpress Theme** is a WordPress starter theme based on HTML5 Boilerplate, brunch, Bower, and Bootstrap Sass, that will help you make better themes.

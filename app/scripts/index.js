@@ -1,5 +1,5 @@
 (function($){
-    
-    // place your awesome code here
-    
+
+  // place your awesome code here
+
 })(window.jQuery);
